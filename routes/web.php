@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('aws', 'AWSController@store');
+Route::get('aws', 'AWSController@upload');
