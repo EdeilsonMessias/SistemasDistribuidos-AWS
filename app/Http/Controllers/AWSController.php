@@ -20,7 +20,7 @@ class AWSController extends Controller
         foreach ($this->disk->files() as $value) {
             $arquivos[] = [
                 'nome' => $value,
-                'url' => $this->disk->url('aws3.jpg')
+                'url' => $this->disk->url($value)
             ];
         }
 
